@@ -25,24 +25,30 @@ http://turingmachine.org/~dmg/papers/dmg2010ninka.pdf
 If you use Ninka for research purposes, we would appreciate you cite
 the above paper.
 
+* Contributors
+
+- Paul Clough for his code to split sentences
+- Anthony Kohan for writing the excel and sqlite backends.
+- Armijn Hemel from Tjaldur Software Governance Solutions  for multiple bug reports and suggestions
+
 * License
 
   Except for the directories comments and splitter, Ninka is licensed
-  under the AGPLv3+
+  under the GPLv2+
 
-    Copyright (C) 2009-2010  Yuki Manabe and Daniel M. German
+    Copyright (C) 2009-2014  Yuki Manabe and Daniel M. German
 
     This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Affero General Public License as
-    published by the Free Software Foundation, either version 3 of the
+    it under the terms of the GNU General Public License as
+    published by the Free Software Foundation; either version 2 of the
     License, or (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Affero General Public License for more details.
+    GNU General Public License for more details.
 
-    You should have received a copy of the GNU Affero General Public License
+    You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
   - splitter.pl is a derivative work of the Rule-based sentence
@@ -55,14 +61,18 @@ the above paper.
 
 * Requirements
 
-Perl version 5
+- Perl version 5 or above
+- for ninka-excel.pl: Perl module Spreadsheet::WriteExcel
+  https://metacpan.org/release/Spreadsheet-WriteExcel/
+- for ninka-sqlite.pl: Perl module DBD::SQLite
+  https://metacpan.org/release/DBD-SQLite
 
 * How to install
 
   1. Unpack the distribution in a directory.
-  2. Build and install comments (make sure it is somwehere in the
+  2. Optional: Build and install comments (make sure it is somwehere in the
      path) (see directory comments)
-  3. Build splitter.pl (see splitter/README for instructions)
+
 
 * Usage:
 
@@ -185,7 +195,7 @@ So Ninka detects all the sentences, including the MIT variant, it
 finds the GPL bsd intention. But the license is not really BSD.
 
 The disclaimers are not what you expect. Now, in all fairness, maybe
-this is another lience.
+this is another license.
 
 
 Let me translate the output for you:

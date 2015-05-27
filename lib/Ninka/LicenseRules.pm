@@ -34,6 +34,8 @@ $NON_CRITICAL_RULES{'LesserGPLv2.1'} = [@GPL_NON_CRITICAL];
 $NON_CRITICAL_RULES{'LGPLv2orv3'} = [@GPL_NON_CRITICAL];
 $NON_CRITICAL_RULES{'LesserGPLv2'} = [@GPL_NON_CRITICAL];
 $NON_CRITICAL_RULES{'LesserGPLv2+'} = [@GPL_NON_CRITICAL];
+$NON_CRITICAL_RULES{'GPLVer2.1or3KDE+'} = [@GPL_NON_CRITICAL];
+$NON_CRITICAL_RULES{'LGPLVer2.1or3KDE+'} = [@GPL_NON_CRITICAL];
 
 $NON_CRITICAL_RULES{'GPLv2+'} = [@GPL_NON_CRITICAL];
 $NON_CRITICAL_RULES{'GPLv2'} = [@GPL_NON_CRITICAL];
@@ -45,8 +47,8 @@ $NON_CRITICAL_RULES{'AGPLv3'} = [@GPL_NON_CRITICAL, 'AGPLreceivedVer0', 'AGPLsee
 $NON_CRITICAL_RULES{'AGPLv3+'} = [@GPL_NON_CRITICAL, 'AGPLreceivedVer0', 'AGPLseeVer0'];
 $NON_CRITICAL_RULES{'GPLnoVersion'} = [@GPL_NON_CRITICAL];
 
-$NON_CRITICAL_RULES{'Apachev1.1'} = ['ApacheLic1_1'];
-$NON_CRITICAL_RULES{'Apachev2'} = ['ApachePre', 'ApacheSee'];
+$NON_CRITICAL_RULES{'Apache-1.1'} = ['ApacheLic1_1'];
+$NON_CRITICAL_RULES{'Apache-2'} = ['ApachePre', 'ApacheSee'];
 
 $NON_CRITICAL_RULES{'LibGCJLic'} = ['LibGCJSee'];
 $NON_CRITICAL_RULES{'CDDLicV1'} = ['Compliance', 'CDDLicWhere', 'ApachesPermLim', 'CDDLicIncludeFile', 'UseSubjectToTerm', 'useOnlyInCompliance'];
@@ -76,9 +78,9 @@ $NON_CRITICAL_RULES{'MPLv1_1'} = ['licenseBlockBegin', 'MPLsee', 'Copyright', 'l
 $NON_CRITICAL_RULES{'MPL1_1andLGPLv2_1'} = ['MPLoptionIfNotDelete2licsVer0', 'MPL_LGPLseeVer0'];
 
 $NON_CRITICAL_RULES{'FreeType'} = ['FreeTypeNotice'];
+$NON_CRITICAL_RULES{'boostV1'} = ['boostSeev1', 'SeeFile'];
 
-$NON_CRITICAL_RULES{'GPLVer2.1or3KDE+'} = [@GPL_NON_CRITICAL];
-$NON_CRITICAL_RULES{'LGPLVer2.1or3KDE+'} = [@GPL_NON_CRITICAL];
+
 
 1;
 
@@ -94,19 +96,19 @@ Contains rules used by Ninka::LicenseMatcher.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2009-2010  Yuki Manabe and Daniel M. German
+    Copyright (C) 2009-2014  Yuki Manabe and Daniel M. German
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as
-published by the Free Software Foundation, either version 3 of the
-License, or (at your option) any later version.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as
+    published by the Free Software Foundation; either version 2 of the
+    License, or (at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 =cut

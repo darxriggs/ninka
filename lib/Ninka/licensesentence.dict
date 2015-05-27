@@ -1,17 +1,17 @@
 #
-#    Copyright (C) 2009-2010  Yuki Manabe and Daniel M. German
+#    Copyright (C) 2009-2014  Yuki Manabe and Daniel M. German
 #
 #    This program is free software; you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as
-#    published by the Free Software Foundation, either version 3 of the
+#    it under the terms of the GNU General Public License as
+#    published by the Free Software Foundation; either version 2 of the
 #    License, or (at your option) any later version.
 #
 #    This program is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
+#    GNU General Public License for more details.
 #
-#    You should have received a copy of the GNU Affero General Public License
+#    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Format
@@ -59,6 +59,8 @@ GPLGen:80:1:^([^,;]+) provides this source code under the GPL <VERSION> License$
 GPLGen:81:1:^<LICENSED> under the GPL <VERSION>, see file ([^,;]+) in this ([^,;]+) for details$
 GPLGenVer2:90:0:^released under GNU GPL v2 or later license$
 GPLGenKDEor3+:10:1:^This program is free software; you can redistribute it and/or modify it under the terms of the GPL; either <VERSION>, or \(at your option\) version 3 or any later version accepted by the membership of KDE e\.V\. \(or its successor approved by the membership of KDE e\.V\.\), which shall act as a proxy defined in Section 14 of version 3 of the license$:
+
+laterTrolltechKDE-approved:10:0:you can \(at your option\) use any later version of the GPL if such license has been publicly approved by Trolltech ASA \(or its successors, if any\) and the KDE Free Qt Foundation$:
 
 LGPLGenKDEor3:10:1:^This library is free software; you can redistribute it and/or modify it under the terms of the Lesser GPL; either <VERSION>, or \(at your option\) version 3 accepted by the membership of KDE e\.V\. \(or its successor approved by the membership of KDE e\.V\.\), Nokia Corporation \(or its successors, if any\) and the KDE Free Qt Foundation, which shall act as a proxy defined in Section 6 of version 3 of the license$
 
@@ -124,7 +126,8 @@ AGPLreceived:10:0:^You should have received a copy of the Affero GPL with this p
 GNUurl:10:0:^If not, see <http://www.gnu.org/licenses/>$
 
 # special cases GPL
-GPLv2orv3:10:0:^This file may be used under the terms of the GPL versions 2\.0 or 3\.0 as published by the Free Software Foundation and appearing in the files LICENSE\.GPL2 and LICENSE\.GPL3 included in the packaging of this file$
+GPLv2orv3:10:1:^This file (can|may) be used under the terms of the GPL versions 2\.0 or 3\.0 as published by the Free Software Foundation and appearing in the files LICENSE\.GPL2 and LICENSE\.GPL3 included in the packaging of this file$
+LGPLV2_1:11:0:^Lesser GPL 2\.1 applies:
 LGPLv2_1orv3:10:0:^([^,;]+) is free software; you can redistribute it and\/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2\.1 or 3 of the License$
 LGPLv2orv3:10:0:^([^,;]+) is free software; you can redistribute it and\/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or \(at your option\) version 3$
 ###XXXGPLCopy:50:2:^You should have received a copy of the GPL along with (.*); see the file (.*); see the file (.*)$:
@@ -211,9 +214,7 @@ BSDWarrExtrict:10:2:IN NO EVENT SHALL (.+) BE LIABLE FOR ANY DIRECT, INDIRECT, I
 BSDlikeRef:10:1:^Use of this source code is governed by a BSD\-style license that can be found in the (.+) file$
 
 MITname:10:0:MIT License
-Copyright:10:1:Copyright \(c\)(.+)
-Copyright:20:1:^Copyright (.+)$:
-MITpermissionExtrict:10:0:Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files \(the <quotes>Software <quotes>\), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions<colon>:
+MITpermissionExtrict:10:0:Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files \(the <quotes>Software<quotes>\), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions<colon>:
 X11noticeExtrict:10:0:The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software
 X11asIsExtrict:10:0:THE SOFTWARE IS PROVIDED <quotes>AS IS<quotes>, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT:
 X11asLiableExtrict:10:0:IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
@@ -479,8 +480,8 @@ X11asIs:52:0:THE SOFTWARE IS PROVIDED <quotes>AS IS<quotes>, WITHOUT WARRANTY OF
 X11asIsLike:52:0:THIS SOFTWARE IS PROVIDED <quotes>AS IS<quotes> AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE:
 X11asIsLike:53:1:^THE SOFTWARE IS PROVIDED <quotes>AS IS<quotes> AND (.+) DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS$
 X11asIsNoNonInfrig:52:0:THIS SOFTWARE IS PROVIDED <quotes>AS-IS<quotes> AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE:
-X11asLiable:52:1:IN NO EVENT SHALL ([^,;]+) BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE:
-X11asLiable:52:2:IN NO EVENT SHALL ([^,;]+) BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS (IN|WITH) THE SOFTWARE:
+X11asLiable:52:1:IN NO EVENT SHALL ([^;]+) BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE:
+X11asLiable:52:2:IN NO EVENT SHALL ([^;]+) BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS (IN|WITH) THE SOFTWARE:
 X11asLiableLcms:52:1:IN NO EVENT SHALL ([^,;]+) BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE:
 X11notice:52:0:The above copyright notice and this permission notice (\(including the next paragraph\) )?shall be included in all copies or substantial portions of the Software:
 X11per:52:0:Permission is hereby granted, free of charge, to any person obtaining a copy of this (software and associated documentation files|source file) \(the <quotes>Software<quotes>\), to deal (in|with) the Software without restriction, including without limitation (on )?the rights to use, copy, modify, merge, publish, distribute,( distribute with modifications,)? sub ?license, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -690,3 +691,5 @@ FSFUnlimited:10:0:^This configure script is free software; the Free Software Fou
 
 # these should be the last one
 Exception:52:0:As a special exception,:
+Copyright:10:1:Copyright \(c\)(.+)
+Copyright:20:1:^Copyright (.+)$:
